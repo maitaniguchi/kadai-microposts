@@ -31,7 +31,8 @@ class AuthController extends Controller
  
     //追加
     protected $redirectTo ='/';
- 
+    protected $loginPath ='/Login';
+
     public function __construct()
     {
         $this->middleware('guest', ['except' => 'getLogout']);
